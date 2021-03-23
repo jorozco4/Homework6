@@ -1,0 +1,10 @@
+nav {
+  background-color: grey;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  align-self: left;
+}
