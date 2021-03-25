@@ -1,10 +1,10 @@
 nav {
-  background-color: grey;
+  background-color: lightblue;
   color: white;
   display: flex;
   justify-content: center;
 }
 
 .container {
-  align-self: left;
+  float: left;
 }
