@@ -27,7 +27,7 @@ let buttonClickHandler = function (event) {
     repoContainerEl.textContent = "";
   }
 };
-
+//This pulls the api response to the console.
 let getForecastWeather = function (lat, lon) {
   fetch(
     apiUrlForecast + "?lat=" + lat + "&lon=" + lon + forecastExclusion + apiKey
@@ -37,7 +37,7 @@ let getForecastWeather = function (lat, lon) {
       response.json().then(function (data) {
         console.log(data);
         console.log(data.name);
-
+        //This calls each day with the time and forcast
         document.getElementById("forecast1day").innerHTML = moment(
           data.daily[0].dt * 1000
         ).format("MMMM Do YYYY");

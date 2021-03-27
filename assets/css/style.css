@@ -2,9 +2,41 @@ nav {
   background-color: lightblue;
   color: white;
   display: flex;
-  justify-content: center;
+}
+body {
+  background-color: lightgrey;
 }
 
-.container {
-  float: left;
+.cover-photo {
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.dashboard {
+  text-align: center;
+  border: 3px solid yellow;
+}
+
+main {
+  display: flex;
+  margin-top: 2%;
+}
+
+.search-bar {
+  justify-content: left;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.containerTwo {
+  display: flex;
+  width: 300px;
+  border: 3px solid yellow;
+}
+
+.container-3 {
+  width: 300px;
+  border: 3px solid yellow;
+  padding: 10px;
 }

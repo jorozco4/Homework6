@@ -9,16 +9,16 @@
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Homework-6</title>
-    <nav>
-      <h1 class="weather-h1">
-        Weather Dashboard
-        <img src="weather.jpg" width="100" height="100" />
-      </h1>
+    <nav class="logo-img">
+      <img class="cover-photo" src="weather.jpg" alt="cover photo" />
     </nav>
   </header>
 
   <body>
-    <div class="container">
+    <div class="dashboard">
+      <h1>Weather Dashboard!</h1>
+    </div>
+    <div class="search-bar">
       <div class="row">
         <div class="col-3">
           <div>
@@ -32,17 +32,16 @@
                 placeholder="Search Location"
               />
               <button class="btn btn-primary" type="submit">Submit</button>
-              <!-- <i class="fa fa-search"></i> -->
             </form>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container">
+    <div class="containerTwo">
       <div class="row">
         <div class="col">
-          <h1>Welcome to <span id="currentCityName"></span></h1>
+          <h3>Welcome to <span id="currentCityName"></span></h3>
           <h6>Current weather status <span id="weatherStatus"></span></h6>
           <h6>Current humditiy <span id="weatherHumidity"></span></h6>
           <h6>Current temp <span id="weatherTemp"></span></h6>
@@ -50,120 +49,118 @@
         </div>
       </div>
     </div>
+    <main>
+      <div class="container-3">
+        <div class="row">
+          <div class="col">
+            <h4 id="forecast1day"></h4>
+            <h6>
+              Daily forecast weather status
+              <span id="dailyForecastWeatherStatus"></span>
+            </h6>
+            <h6>
+              Daily forecast humditiy
+              <span id="dailyForecastWeatherHumidity"></span>
+            </h6>
+            <h6>
+              Daily forecast temp <span id="dailyForecastWeatherTemp"></span>
+            </h6>
+            <h6>
+              Daily forecast speed <span id="dailyForecastWeatherSpeed"></span>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="row">
+          <div class="col">
+            <h4 id="forecast2day"></h4>
+            <h6>
+              Daily forecast weather status
+              <span id="dailyForecast2WeatherStatus"></span>
+            </h6>
+            <h6>
+              Daily forecast humditiy
+              <span id="dailyForecast2WeatherHumidity"></span>
+            </h6>
+            <h6>
+              Daily forecast temp <span id="dailyForecast2WeatherTemp"></span>
+            </h6>
+            <h6>
+              Daily forecast speed
+              <span id="dailyForecast2WeatherSpeed"></span>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="row">
+          <div class="col">
+            <h4 id="forecast3day"></h4>
+            <h6>
+              Daily forecast weather status
+              <span id="dailyForecast3WeatherStatus"></span>
+            </h6>
+            <h6></h6>
+              Daily forecast humditiy
+              <span id="dailyForecast3WeatherHumidity"></span>
+            </h6>
+            <h6>
+              Daily forecast temp <span id="dailyForecast3WeatherTemp"></span>
+            </h6>
+            <h6>
+              Daily forecast speed
+              <span id="dailyForecast3WeatherSpeed"></span>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="row">
+          <div class="col">
+            <h4 id="forecast4day"></h4>
+            <h6>
+              Daily forecast weather status
+              <span id="dailyForecast4WeatherStatus"></span>
+            </h6>
+            <h6>
+              Daily forecast humditiy
+              <span id="dailyForecast4WeatherHumidity"></span>
+            </h6>
+            <h6>
+              Daily forecast temp <span id="dailyForecast4WeatherTemp"></span>
+            </h6>
+            <h6>
+              Daily forecast speed
+              <span id="dailyForecast4WeatherSpeed"></span>
+            </h6>
+          </div>
+        </div>
+      </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h4 id="forecast1day"></h4>
-          <h6>
-            Daily forecast weather status
-            <span id="dailyForecastWeatherStatus"></span>
-          </h6>
-          <h6>
-            Daily forecast humditiy
-            <span id="dailyForecastWeatherHumidity"></span>
-          </h6>
-          <h6>
-            Daily forecast temp <span id="dailyForecastWeatherTemp"></span>
-          </h6>
-          <h6>
-            Daily forecast speed <span id="dailyForecastWeatherSpeed"></span>
-          </h6>
+      <div class="container-3">
+        <div class="row">
+          <div class="col">
+            <h4 id="forecast5day"></h4>
+            <h6>
+              Daily forecast weather status
+              <span id="dailyForecast5WeatherStatus"></span>
+            </h6>
+            <h6>
+              Daily forecast humditiy
+              <span id="dailyForecast5WeatherHumidity"></span>
+            </h6>
+            <h6>
+              Daily forecast temp <span id="dailyForecast5WeatherTemp"></span>
+            </h6>
+            <h6>
+              Daily forecast speed
+              <span id="dailyForecast5WeatherSpeed"></span>
+            </h6>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h4 id="forecast2day"></h4>
-          <h6>
-            Daily forecast2 weather status
-            <span id="dailyForecast2WeatherStatus"></span>
-          </h6>
-          <h6>
-            Daily forecast2 humditiy
-            <span id="dailyForecast2WeatherHumidity"></span>
-          </h6>
-          <h6>
-            Daily forecast2 temp <span id="dailyForecast2WeatherTemp"></span>
-          </h6>
-          <h6>
-            Daily forecast2 speed <span id="dailyForecast2WeatherSpeed"></span>
-          </h6>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h4 id="forecast3day"></h4>
-          <h6>
-            Daily forecast3 weather status
-            <span id="dailyForecast3WeatherStatus"></span>
-          </h6>
-          <h6>
-            Daily forecast3 humditiy
-            <span id="dailyForecast3WeatherHumidity"></span>
-          </h6>
-          <h6>
-            Daily forecast3 temp <span id="dailyForecast3WeatherTemp"></span>
-          </h6>
-          <h6>
-            Daily forecast3 speed <span id="dailyForecast3WeatherSpeed"></span>
-          </h6>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h4 id="forecast4day"></h4>
-          <h6>
-            Daily forecast4 weather status
-            <span id="dailyForecast4WeatherStatus"></span>
-          </h6>
-          <h6>
-            Daily forecast4 humditiy
-            <span id="dailyForecast4WeatherHumidity"></span>
-          </h6>
-          <h6>
-            Daily forecast4 temp <span id="dailyForecast4WeatherTemp"></span>
-          </h6>
-          <h6>
-            Daily forecast4 speed <span id="dailyForecast4WeatherSpeed"></span>
-          </h6>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h4 id="forecast5day"></h4>
-          <h6>
-            Daily forecast5 weather status
-            <span id="dailyForecast5WeatherStatus"></span>
-          </h6>
-          <h6>
-            Daily forecast5 humditiy
-            <span id="dailyForecast5WeatherHumidity"></span>
-          </h6>
-          <h6>
-            Daily forecast5 temp <span id="dailyForecast5WeatherTemp"></span>
-          </h6>
-          <h6>
-            Daily forecast5 speed <span id="dailyForecast5WeatherSpeed"></span>
-          </h6>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="col-12 col-md-8 ">
-      <h2 class="subtitle">
-        Showing City History: <span id="repo-search-term"></span>
-      </h2>
-      <div id="repos-container" class="list-group"></div>
-    </div> -->
+    </main>
 
     <script src="script.js"></script>
 
