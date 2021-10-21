@@ -1,4 +1,4 @@
-# Homework6
+# Weather-Dashboard
 
 ```
 GIVEN a weather dashboard with form inputs
